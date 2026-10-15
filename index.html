@@ -161,11 +161,13 @@ figcaption small{display:block;font-size:14px;color:var(--muted);line-height:1.3
 .contact:hover{color:#fff;text-decoration:underline}
 .contact span{flex:none;width:40px;height:40px;border-radius:999px;background:rgba(251,247,239,.14);display:flex;align-items:center;justify-content:center}
 
-footer{border-top:1px solid var(--line)}
-.foot{padding-top:32px;padding-bottom:40px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px 24px}
-.foot-brand{font-family:var(--serif);font-weight:700;font-size:22px;letter-spacing:.08em;color:var(--deep)}
-.foot-brand small{font-family:var(--sans);font-weight:400;font-size:14px;letter-spacing:0;color:var(--muted)}
-.foot-hand{font-family:var(--hand);font-size:26px;color:var(--clay)}
+footer{border-top:1px solid var(--line);background:var(--cream)}
+.foot{padding-top:40px;padding-bottom:28px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px 32px}
+.foot-left{display:flex;flex-direction:column;gap:12px}
+.foot-tag{font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--brown)}
+.foot-hand{font-family:var(--hand);font-size:28px;line-height:1.2;color:var(--clay)}
+.foot-base{border-top:1px solid var(--line);padding-top:18px;padding-bottom:28px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 20px;font-size:13px;color:var(--muted)}
+.foot-base a{color:var(--muted);text-decoration:none}.foot-base a:hover{color:var(--deep);text-decoration:underline}
 .mbar{display:none}
 
 /* responsive */
@@ -200,6 +202,9 @@ footer{border-top:1px solid var(--line)}
   .jarrow{transform:rotate(90deg)}
   .why{gap:24px 18px}
   .cta-actions .btn{width:100%}
+  .foot{flex-direction:column;align-items:center;text-align:center;gap:14px;padding-top:44px;padding-bottom:28px}
+  .foot-left{align-items:center}
+  .foot-base{flex-direction:column;align-items:center;text-align:center;padding-top:18px;padding-bottom:24px}
   .mbar{display:flex;position:sticky;bottom:0;z-index:20;padding:12px 16px calc(16px + env(safe-area-inset-bottom));background:rgba(251,247,239,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid var(--line)}
   .mbar .btn{width:100%}
 }
@@ -397,8 +402,15 @@ Lots of 💕</blockquote>
 
 <footer>
 <div class="wrap foot">
-<span class="foot-brand">SAMPOORNA <small>Whole Health. Whole Life. Whole You.</small></span>
-<span class="foot-hand">Let's create your next chapter together.</span>
+<div class="foot-left">
+<a href="#top" class="brand"><img class="brand-emblem" src="emblem.png" width="46" height="46" alt=""><span class="brand-text"><span class="brand-name">SAMPOORNA</span><span class="brand-by">by Rosy Marwah</span></span></a>
+<p class="foot-tag">Whole Health · Whole Life · Whole You</p>
+</div>
+<p class="foot-hand">Let's create your next chapter together.</p>
+</div>
+<div class="wrap foot-base">
+<span>© 2026 Sampoorna by Rosy Marwah</span>
+<span><a href="mailto:connect.sampoorna@gmail.com">connect.sampoorna@gmail.com</a> · <a href="https://www.instagram.com/sampoornawithrosy" target="_blank" rel="noopener">@sampoornawithrosy</a></span>
 </div>
 </footer>
 
