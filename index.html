@@ -8,9 +8,10 @@
 <meta property="og:title" content="Sampoorna by Rosy Marwah">
 <meta property="og:description" content="Holistic Life &amp; Wellness Coaching with Nutrition. Whole Health. Whole Life. Whole You.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="rosy.jpg">
+<meta property="og:image" content="https://www.sampoornawithrosy.com/logo.jpg">
 <meta name="theme-color" content="#163F29">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpath d='M20 33c-6-4-9-9-9-14 4 1 7 4 9 8 2-4 5-7 9-8 0 5-3 10-9 14z' fill='%231F5A3A'/%3E%3Cpath d='M20 27c-2-4-3-8-3-12 0-3 1-6 3-9 2 3 3 6 3 9 0 4-1 8-3 12z' fill='%23D9895B'/%3E%3Ccircle cx='20' cy='4' r='2.4' fill='%23E0A238'/%3E%3C/svg%3E">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="emblem.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Nunito+Sans:wght@400;600;700;800&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
@@ -85,6 +86,9 @@ h1{font-family:var(--serif);font-weight:600;font-size:clamp(40px,6vw,74px);line-
 .meaning-head .h2{color:var(--cream)}
 .meaning-head .h2 em{color:var(--gold)}
 .meaning-head p{font-size:18px;color:#D8D0BE}
+.brand-emblem{flex:none;width:46px;height:46px;object-fit:contain}
+.logo-card{width:min(320px,78vw);margin-bottom:10px;border-radius:32px;overflow:hidden;background:#FCF2E6;border:6px solid rgba(233,184,114,.45);box-shadow:0 24px 60px rgba(0,0,0,.28)}
+.logo-card img{width:100%;height:auto}
 .tiles{display:flex;flex-wrap:nowrap;justify-content:center;gap:clamp(3px,1.2vw,6px);max-width:100%}
 .tile{flex:none;width:min(36px,calc((100vw - 72px) / 9));height:auto;aspect-ratio:36/44;font-size:min(26px,calc((100vw - 72px) / 12.5));border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:700;color:#fff}
 .tile.big{flex:none;width:46px;height:46px;border-radius:12px}
@@ -199,8 +203,8 @@ footer{border-top:1px solid var(--line)}
   .mbar{display:flex;position:sticky;bottom:0;z-index:20;padding:12px 16px calc(16px + env(safe-area-inset-bottom));background:rgba(251,247,239,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid var(--line)}
   .mbar .btn{width:100%}
 }
-@media (max-width:420px){.brand{gap:7px}.brand svg{width:28px;height:28px}.brand-name{font-size:20px;letter-spacing:.06em}.brand-by{font-size:15px}.navbtn{padding:9px 14px;font-size:13px}}
-@media (max-width:350px){.brand svg{display:none}.wrap{padding:0 16px}.who,.quotes{margin:0 -16px;padding:4px 16px 14px}}
+@media (max-width:420px){.brand{gap:7px}.brand-emblem{width:38px;height:38px}.brand-name{font-size:20px;letter-spacing:.06em}.brand-by{font-size:15px}.navbtn{padding:9px 14px;font-size:13px}}
+@media (max-width:350px){.brand-emblem{display:none}.wrap{padding:0 16px}.who,.quotes{margin:0 -16px;padding:4px 16px 14px}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
 </style>
 </head>
@@ -208,7 +212,7 @@ footer{border-top:1px solid var(--line)}
 
 <header>
 <nav class="wrap" aria-label="Main">
-<a href="#top" class="brand"><svg width="34" height="34" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M20 33c-6-4-9-9-9-14 4 1 7 4 9 8 2-4 5-7 9-8 0 5-3 10-9 14z" fill="#1F5A3A"/><path d="M20 27c-2-4-3-8-3-12 0-3 1-6 3-9 2 3 3 6 3 9 0 4-1 8-3 12z" fill="#D9895B"/><circle cx="20" cy="4" r="2.4" fill="#E0A238"/></svg><span class="brand-text"><span class="brand-name">SAMPOORNA</span><span class="brand-by">by Rosy Marwah</span></span></a>
+<a href="#top" class="brand"><img class="brand-emblem" src="emblem.png" width="46" height="46" alt=""><span class="brand-text"><span class="brand-name">SAMPOORNA</span><span class="brand-by">by Rosy Marwah</span></span></a>
 <div class="navlinks">
 <a href="#about">About</a><a href="#meaning">The Meaning</a><a href="#who">Who I Help</a><a href="#how">How I Help</a><a href="#stories">Stories</a>
 </div>
@@ -259,7 +263,7 @@ footer{border-top:1px solid var(--line)}
 <div class="wrap meaning-inner">
 <div class="meaning-head">
 <p class="eyebrow">The meaning behind the name</p>
-<div class="tiles" aria-hidden="true"><span class="tile" style="background:#1F5A3A">S</span><span class="tile" style="background:#B5651A">A</span><span class="tile" style="background:#1F5A3A">M</span><span class="tile" style="background:#B5651A">P</span><span class="tile" style="background:#1F5A3A">O</span><span class="tile" style="background:#B5651A">O</span><span class="tile" style="background:#1F5A3A">R</span><span class="tile" style="background:#B5651A">N</span><span class="tile" style="background:#1F5A3A">A</span></div>
+<div class="logo-card"><img src="logo.jpg" width="800" height="800" alt="Sampoorna logo: Health, Wellness, Life Coaching. Whole Health. Whole Life. Whole You. By Rosy Marwah" loading="lazy"></div>
 <h2 class="h2">Becoming whole — <em>not becoming perfect.</em></h2>
 <p>A holistic approach to a balanced and fulfilling life — for your mind, your body and everything in between.</p>
 </div>
